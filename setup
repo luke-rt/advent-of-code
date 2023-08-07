@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "Language? (rust, cpp)"
+read LANG
+
+echo "Year?"
+read YEAR
+
+echo "Day?"
+read DAY
+
+[ -d "./$YEAR/day$DAY" ] && echo "Directory ./$YEAR/day$DAY exists." && exit
+
+echo "Setting up $LANG on year $YEAR and day $DAY..."
+	mkdir 2023
+	mkdir 2023/day$DAY
+	cp -r templates/$LANG/* $YEAR/day$DAY
+}
+
