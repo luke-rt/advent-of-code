@@ -1,5 +1,5 @@
 #include <fstream>
-#include <ostream>
+#include <iostream>
 
 int main(void) {
 	std::ifstream fin;

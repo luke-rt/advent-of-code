@@ -17,4 +17,3 @@ fn part2(input: &str) -> Result<()> {
 
 	Ok(())
 }
-
