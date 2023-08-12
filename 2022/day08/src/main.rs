@@ -1,19 +1,16 @@
-type Result<T> = ::std::result::Result<T, Box <dyn ::std::error::Error>>;
+use std::array;
+
+
+mod part1;
+mod part2;
+
+type Result<T> = ::std::result::Result<T, Box<dyn ::std::error::Error>>;
 
 fn main() -> Result<()> {
-    let input = include_str!("../day08.txt");
+    let input = include_str!("../day08.txt").trim();
 
-    part1(&input)?;
-    part2(&input)?;
+    // part1::part1(&input)?;
+    part2::part2(&input)?;
     Ok(())
 }
 
-fn part1(input: &str) -> Result<()> {
-
-	Ok(())
-}
-
-fn part2(input: &str) -> Result<()> {
-
-	Ok(())
-}
