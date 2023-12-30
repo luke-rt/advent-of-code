@@ -3,7 +3,7 @@
 
 int main(void) {
 	std::ifstream fin;
-	fin.open("day00.txt");
+	fin.open("input.txt");
 
 	std::string line;
 	while(fin >> line) {

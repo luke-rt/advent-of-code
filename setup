@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Language? (rust, cpp)"
+echo "Language? (rust, cpp, python)"
 read LANG
 
 echo "Year?"
